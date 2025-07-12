@@ -1,0 +1,25 @@
+{
+    "permission_id": "sqp-001",
+    "issued_by": "user@yourdomain.com",
+    "granted_to": "gpt.openai.com",
+    "can_send_to": [
+        "suno.ai",
+        "midjourney.com"
+    ],
+    "can_access_files": [
+        "scene.json",
+        "audio.intent.json",
+        "visual.intent.json"
+    ],
+    "actions_allowed": [
+        "read",
+        "submit",
+        "generate_preview"
+    ],
+    "scope": {
+        "purpose": "generate creative outputs for monster ad",
+        "expires": "2025-12-31T23:59:59Z",
+        "limit_per_tool": 1
+    },
+    "user_signature": "0xUSER_SIGNATURE_EXAMPLE"
+}

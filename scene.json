@@ -1,0 +1,46 @@
+{
+    "scene_id": "monster_intro_001",
+    "description": "Monsters gather and sing on an island that forms the logo.",
+    "mood": "Joyful, whimsical, cinematic",
+    "tempo_bpm": 105,
+    "duration_seconds": 30,
+    "timeline": {
+        "0-4": "Solo beat from stone creature (Noggin)",
+        "4-8": "Bass hum joins in (Mammott)",
+        "8-12": "Cheerleader vocals enter (PomPom)",
+        "12-16": "More monsters join with quirky vocals",
+        "16-22": "Build-up to full chorus",
+        "22-30": "Final chorus and logo reveal"
+    },
+    "media_intent": {
+        "audio": {
+            "instruments": [
+                "stone percussion",
+                "vocal hum",
+                "cheer chant",
+                "synth plucks"
+            ],
+            "style": "animated ensemble",
+            "key": "C major"
+        },
+        "visual": {
+            "style": "3D cartoon, bright, magical",
+            "characters": [
+                "Noggin",
+                "Mammott",
+                "PomPom",
+                "Furcorn",
+                "Maw",
+                "Entbrat"
+            ],
+            "camera": "crane pull-back on chorus"
+        },
+        "video": {
+            "transitions": [
+                "match cuts",
+                "camera dolly",
+                "aerial zoom out"
+            ]
+        }
+    }
+}
