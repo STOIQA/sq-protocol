@@ -1,0 +1,49 @@
+
+---
+name: Protocol Proposal or Issue
+about: Submit a SQIP idea or identify a problem in the protocol
+title: "[SQIP] Title or Issue Summary"
+labels: ["proposal", "discussion"]
+assignees: ''
+
+---
+
+## 📌 Summary
+
+Briefly describe the issue, idea, or proposed change.
+
+---
+
+## 🧠 Motivation
+
+Why does this matter? What problem does it solve or improve?
+
+---
+
+## 🔧 Proposed Solution
+
+Explain how this should be added, changed, or fixed. Include schema examples if helpful.
+
+```json
+{
+  "example_field": "example_value"
+}
+```
+
+---
+
+## ✅ Checklist
+
+- [ ] I’ve reviewed existing SQIPs to avoid duplicates
+- [ ] My proposal fits within the protocol’s purpose
+- [ ] I’m open to feedback and revisions
+
+---
+
+## 🤝 Contribution
+
+Would you like to help implement this idea?
+
+- [ ] Yes – I’ll open a PR
+- [ ] Yes – with help
+- [ ] No – just suggesting
