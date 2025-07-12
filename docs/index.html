@@ -2,60 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SQ Protocol — Creative Interop Standard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQ Protocol – Creative Interop Standard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1, h2 {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
       color: #111;
     }
-    code {
-      background: #f3f3f3;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: monospace;
+    h1 {
+      font-size: 2rem;
     }
-    a {
-      color: #0056cc;
+    code {
+      background: #eee;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .box {
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .link {
+      color: #0066cc;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>🎬 SQ Protocol — The Creative Interop Standard</h1>
-  <p><strong>SQ (Synthesis Quotient)</strong> is a scene-based format for aligning creative intent across AI tools.</p>
 
-  <h2>📂 Files</h2>
-  <ul>
-    <li><code>scene.json</code> — describes mood, timing, media, and characters</li>
-    <li><code>permission.json</code> — defines who can act, when, and with what limits</li>
-    <li><code>cue_sheets/</code> — optional time-based coordination between media layers</li>
-  </ul>
+  <div class="section">
+    <h1>🎬 SQ Protocol — The Creative Interop Standard
+    </h1>
+    <p><strong>SQ (Synthesis Quotient)</strong> is a scene-based format for aligning creative intent across AI tools.</p>
+  </div>
 
-  <h2>📌 Version</h2>
-  <p><strong>Current Release:</strong> v0.1 — July 2025</p>
+  <div class="section box">
+    <div class="title">📂 Core Files
+    </div>
+    <ul>
+      <li><code>scene.json</code> — mood, timing, media, and characters</li>
+      <li><code>permission.json</code> — defines who can act, when, and under what limits</li>
+      <li><code>cue_sheets/</code> — optional time-based syncing between media layers</li>
+    </ul>
+  </div>
 
-  <h2>📜 SQIP Proposals</h2>
-  <ul>
-    <li><strong>SQIP-0002</strong> — Permission Protocol Specification</li>
-    <li><strong>SQIP-0003</strong> — Cue Sheet Synchronization</li>
-  </ul>
+  <div class="section box">
+    <div class="title">📌 Version
+    </div>
+    <p><strong>Current Release:</strong> v0.1 — July 2025</p>
+    <p>View on GitHub: <a class="link" href="https://github.com/STOIQA/sq-protocol">STOIQA/sq-protocol</a></p>
+  </div>
 
-  <h2>🔗 GitHub</h2>
-  <p>
-    <a href="https://github.com/STOIQA/sq-protocol" target="_blank">
-      github.com/STOIQA/sq-protocol
-    </a>
-  </p>
+  <div class="section box">
+    <div class="title">📜 SQIP Proposals
+    </div>
+    <ul>
+      <li><strong>SQIP-0002</strong> — Permission Protocol Spec</li>
+      <li><strong>SQIP-0003</strong> — Cue Sheet Synchronization</li>
+    </ul>
+  </div>
+
+  <div class="section box">
+    <div class="title">✨ How It Works</div>
+    <p>Tools like GPT, Suno, Midjourney, Runway, and Veo each receive structured intent data from <code>scene.json</code> and <code>permission.json</code>.</p>
+    <p>Each one contributes its output based on a shared creative timeline.</p>
+  </div>
+
+  <div class="section box">
+    <div class="title">🚀 Get Involved
+    </div>
+    <ul>
+      <li>Fork the repo and submit issues or pull requests</li>
+      <li>Propose new standards via SQIPs</li>
+      <li>Test cross-tool integration</li>
+    </ul>
+    <p>Let’s build the bridge between creative intelligence.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 STOIQA &mdash; Open source & community-led
+  </footer>
+
 </body>
 </html>
