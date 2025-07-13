@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SQ Protocol — Two Creative Flows</title>
+  <title>SQ Protocol — Dual Creative Flow</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,43 +11,57 @@
       margin: 2rem auto;
       padding: 0 1rem;
       line-height: 1.6;
-      background-color: #fdfdfd;
+      background-color: #111;
+      color: #eee;
     }
     h1, h2, h3 {
-      color: #111;
+      color: #fff;
     }
     img {
       max-width: 100%;
-      border: 1px solid #ddd;
+      border: 1px solid #444;
       border-radius: 6px;
       margin: 1rem 0;
     }
     code {
-      background: #eee;
+      background: #222;
+      color: #0ff;
       padding: 2px 5px;
       border-radius: 4px;
     }
     form {
       margin-top: 2rem;
       padding: 1rem;
-      background: #fafafa;
-      border: 1px solid #ccc;
+      background: #1a1a1a;
+      border: 1px solid #333;
       border-radius: 6px;
     }
     textarea {
       width: 100%;
       padding: 0.5rem;
       font-size: 1rem;
+      background: #222;
+      color: #eee;
+      border: 1px solid #444;
+      border-radius: 4px;
     }
     button {
       margin-top: 0.5rem;
       padding: 0.4rem 1rem;
       font-size: 1rem;
-      background-color: #0070f3;
+      background-color: #0af;
       color: white;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+    }
+    a {
+      color: #0af;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #777;
     }
   </style>
 </head>
@@ -65,7 +79,6 @@
     <li>MidJourney renders visual layers</li>
     <li>Veo assembles final video, respecting timing + permissions</li>
   </ul>
-  <p>This requires direct compatibility between tools and permission-aware agents.</p>
 
   <h3>2️⃣ Manual Handoff (Hybrid)</h3>
   <p>Each step still reads from the same SQ intent schema, but users manually pass the output between tools:</p>
@@ -114,7 +127,7 @@
     <button type="submit">Submit</button>
   </form>
 
-  <footer style="margin-top: 2rem; font-size: 0.85rem; color: #888;">
+  <footer>
     &copy; 2025 STOIQA — Creative infrastructure is open.
   </footer>
 </body>
