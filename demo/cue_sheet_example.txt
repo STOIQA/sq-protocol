@@ -1,0 +1,6 @@
+# cue_sheet_example.txt
+00:00 - GPT intro text on screen
+00:04 - Suno music starts
+00:08 - Midjourney image fade in
+00:12 - Veo begins assembling edit
+00:30 - Fade to logo + theme resolve

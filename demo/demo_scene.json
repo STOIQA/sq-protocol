@@ -1,0 +1,26 @@
+{
+  "id": "demo-scene-001",
+  "type": "scene",
+  "intent": "teaser_intro",
+  "children": [
+    {
+      "id": "music-suno",
+      "type": "music",
+      "tool": "suno",
+      "cue": "scene start",
+      "output": "audio/theme.wav"
+    },
+    {
+      "id": "visual-mj",
+      "type": "image",
+      "tool": "midjourney",
+      "input_from": "audio/theme.wav"
+    },
+    {
+      "id": "edit-veo",
+      "type": "video",
+      "tool": "veo",
+      "input_from": "image + audio"
+    }
+  ]
+}

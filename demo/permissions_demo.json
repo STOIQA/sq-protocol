@@ -1,0 +1,36 @@
+{
+  "agents": {
+    "suno": {
+      "can_read": [
+        "scene.intent"
+      ],
+      "can_write": [
+        "audio/theme.wav"
+      ],
+      "notify": [
+        "midjourney"
+      ]
+    },
+    "midjourney": {
+      "can_read": [
+        "audio/theme.wav"
+      ],
+      "can_write": [
+        "image/scene.png"
+      ],
+      "notify": [
+        "veo"
+      ]
+    },
+    "veo": {
+      "can_read": [
+        "image/scene.png",
+        "audio/theme.wav"
+      ],
+      "can_write": [
+        "final_edit.mp4"
+      ]
+    }
+  },
+  "expires": "2025-12-01T00:00:00Z"
+}
