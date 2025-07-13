@@ -3,110 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SQ Protocol – Creative Interop Standard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>SQ Protocol — Two Creative Flows</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      max-width: 820px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+    }
+    h1, h2, h3 {
       color: #111;
     }
-    h1 {
-      font-size: 2rem;
+    img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin: 1rem 0;
     }
     code {
       background: #eee;
-      padding: 0.2em 0.4em;
+      padding: 2px 5px;
       border-radius: 4px;
-      font-size: 0.95em;
     }
-    .section {
-      margin-bottom: 2.5rem;
-    }
-    .title {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-    .box {
+    form {
+      margin-top: 2rem;
       padding: 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      background: #fafafa;
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
-    ul {
-      padding-left: 1.5rem;
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
     }
-    .link {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    footer {
-      margin-top: 4rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
+    button {
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      font-size: 1rem;
+      background-color: #0070f3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+  <h1>🎬 SQ Protocol — The Creative Interop Standard</h1>
+  <p><strong>SQ (Synthesis Quotient)</strong> enables creative AI tools to operate in sync — via shared scene intent and permission schema.</p>
 
-  <div class="section">
-    <h1>🎬 SQ Protocol — The Creative Interop Standard
-    </h1>
-    <p><strong>SQ (Synthesis Quotient)</strong> is a scene-based format for aligning creative intent across AI tools.</p>
-  </div>
+  <h2>🧠 Two Creative Workflow Models</h2>
 
-  <div class="section box">
-    <div class="title">📂 Core Files
-    </div>
-    <ul>
-      <li><code>scene.json</code> — mood, timing, media, and characters</li>
-      <li><code>permission.json</code> — defines who can act, when, and under what limits</li>
-      <li><code>cue_sheets/</code> — optional time-based syncing between media layers</li>
-    </ul>
-  </div>
+  <h3>1️⃣ Automated Chain (Integrated)</h3>
+  <p>Fully integrated toolchain where agents read <code>scene.json</code> and <code>permission.json</code> to act in sequence without human handoff:</p>
+  <ul>
+    <li>GPT generates the scene + script</li>
+    <li>Suno reads and produces audio</li>
+    <li>MidJourney renders visual layers</li>
+    <li>Veo assembles final video, respecting timing + permissions</li>
+  </ul>
+  <p>This requires direct compatibility between tools and permission-aware agents.</p>
 
-  <div class="section box">
-    <div class="title">📌 Version
-    </div>
-    <p><strong>Current Release:</strong> v0.1 — July 2025</p>
-    <p>View on GitHub: <a class="link" href="https://github.com/STOIQA/sq-protocol">STOIQA/sq-protocol</a></p>
-  </div>
+  <h3>2️⃣ Manual Handoff (Hybrid)</h3>
+  <p>Each step still reads from the same SQ intent schema, but users manually pass the output between tools:</p>
+  <ul>
+    <li>Download <code>scene.json</code> and <code>permission.json</code> from GPT</li>
+    <li>Upload to next tool manually (e.g., Suno, MJ, Veo)</li>
+    <li>Ideal for modular experimentation or app-based integration</li>
+  </ul>
 
-  <div class="section box">
-    <div class="title">📜 SQIP Proposals
-    </div>
-    <ul>
-      <li><strong>SQIP-0002</strong> — Permission Protocol Spec</li>
-      <li><strong>SQIP-0003</strong> — Cue Sheet Synchronization</li>
-    </ul>
-  </div>
+  <h2>📊 Visual Model: Two Options</h2>
+  <p><em>Automated (top) and Manual (bottom) models of the SQ creative pipeline:</em></p>
+  <img src="ChatGPT%20Image%20Jul%2013,%202025%20at%2011_42_41%20AM.png" alt="Creative Flow Models Diagram">
 
-  <div class="section box">
-    <div class="title">✨ How It Works</div>
-    <p>Tools like GPT, Suno, Midjourney, Runway, and Veo each receive structured intent data from <code>scene.json</code> and <code>permission.json</code>.</p>
-    <p>Each one contributes its output based on a shared creative timeline.</p>
-  </div>
+  <h2>📂 Core Files</h2>
+  <ul>
+    <li><code>scene.json</code> — mood, timing, media, characters</li>
+    <li><code>permission.json</code> — who can act, when, and with what limits</li>
+    <li><code>cue_sheets/</code> — optional time-based syncing between tools</li>
+  </ul>
 
-  <div class="section box">
-    <div class="title">🚀 Get Involved
-    </div>
-    <ul>
-      <li>Fork the repo and submit issues or pull requests</li>
-      <li>Propose new standards via SQIPs</li>
-      <li>Test cross-tool integration</li>
-    </ul>
-    <p>Let’s build the bridge between creative intelligence.</p>
-  </div>
-  <img src="sq-flowchart.png" alt="SQ Protocol Flowchart" style="max-width: 100%;">
+  <h2>📌 Version</h2>
+  <p><strong>Current Release:</strong> v0.1 — July 2025</p>
+  <p>GitHub: <a href="https://github.com/STOIQA/sq-protocol" target="_blank">STOIQA/sq-protocol</a></p>
 
+  <h2>📚 SQIP Proposals</h2>
+  <ul>
+    <li><strong>SQIP-0002</strong> — Permission Protocol Spec</li>
+    <li><strong>SQIP-0003</strong> — Cue Sheet Synchronization</li>
+    <li><strong>SQIP-0004</strong> — Dual Flow Architecture (WIP)</li>
+  </ul>
 
-  <footer>
-    &copy; 2025 STOIQA &mdash; Open source & community-led
+  <h2>✨ How It Works</h2>
+  <p>Agents or tools check <code>scene.json</code> + <code>permission.json</code>, act based on shared timeline, then hand off output — either directly or manually.</p>
+
+  <h2>🙌 Get Involved</h2>
+  <ul>
+    <li>Fork the repo and open PRs</li>
+    <li>Propose improvements via SQIPs</li>
+    <li>Test interoperability across AI tools</li>
+  </ul>
+
+  <form name="feedback" netlify>
+    <h2>💬 Feedback</h2>
+    <label for="feedback">What do you think? Ideas, suggestions, or bugs?</label><br />
+    <textarea name="feedback" rows="4" placeholder="Type your message here..."></textarea><br />
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer style="margin-top: 2rem; font-size: 0.85rem; color: #888;">
+    &copy; 2025 STOIQA — Creative infrastructure is open.
   </footer>
-
 </body>
 </html>
